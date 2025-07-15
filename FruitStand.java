@@ -1,17 +1,19 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class FruitStand {
     public static void main(String[] args) {
-        int totalPrice = 0;
-        Scanner sc = new Scanner(System.in);
+        int totalPrice = 0; // Initialize total price to 0
+        Scanner sc = new Scanner(System.in); // Create a Scanner object to read input from the user
+        // While loop so that when the user gives an invalid option the program doesn't terminate
         while (true) {
-            String choice = sc.nextLine().trim();
+            String choice = sc.nextLine().trim(); // Read user input for item type and trim any leading or trailing whitespace
             if (choice.equalsIgnoreCase("fruit")) {
                 System.out.println("Please choose a fruit: Strawberry, Banana, Apple, Mango (or type 'quit' to finsih your order)");
                 String choice2 = "";
                 while (!choice2.equals("quit")) {
-                    choice2 = sc.nextLine().trim();
+                    choice2 = sc.nextLine().trim(); // Read user input and trim any leading or trailing whitespace
+                    // Control flow block to determine the drink choice and its price
                     if (choice2.equalsIgnoreCase("strawberry")) {
                         System.out.println("You chose Strawberry, that will be $20");
                         totalPrice += 20;
@@ -36,7 +38,8 @@ public class Main {
                 System.out.println("Please choose a drink: Water, Juice, Soda, Tea (or type 'quit' to finish your order)");
                 String choice2 = "";
                 while (!choice2.equals("quit")) {
-                    choice2 = sc.nextLine().trim();
+                    choice2 = sc.nextLine().trim(); // Read user input and trim any leading or trailing whitespace
+                    // Control flow block to determine the drink choice and its price
                     if (choice2.equalsIgnoreCase("water")) {
                         System.out.println("You chose Water, that will be $5");
                         totalPrice += 5;
