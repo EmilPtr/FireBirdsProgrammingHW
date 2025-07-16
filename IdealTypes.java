@@ -1,3 +1,12 @@
+/**********************************************************************************
+ * Solution to the IdealTypes.java exercise                                       *
+ * Created by Emil on 2025-07-14                                                  *
+ * This program demonstrates the use of various data types in Java                *
+ * and explains the ideal data types for different scenarios.                     *
+ * It includes examples of float, int, char, String, double, and long.            *
+ * Each variable is initialized with a value that represents its ideal use case.  *
+ **********************************************************************************/
+
 public class IdealTypes {
     private float money = (float) 1.30; // Ideal datatype for money is float, because it is a large number, with some decimals.
     private int sumOfSeriesOfNaturalNumbers = 1 + 2 + 3 + 4 + 5; // Ideal datatype for sum of series of natural numbers is int, because it is a medium sized number, and natural numbers do not have decimals

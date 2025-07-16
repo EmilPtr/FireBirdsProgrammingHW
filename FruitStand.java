@@ -1,3 +1,11 @@
+/***************************************************************************************************************
+ * Solution to the Fruit Stand Problem                                                                         *
+ * Created by Emil on 2025-07-14                                                                               *
+ * This program simulates a fruit and drink stand where users can choose items and see their total price.      *
+ * It uses a while loop to handle user input and control flow to determine the item choices and their prices.  *
+ * The program continues to prompt the user until they choose to quit or make a valid selection.               *
+ * It also handles invalid inputs gracefully.                                                                  *
+ ***************************************************************************************************************/
 
 import java.util.Scanner;
 
