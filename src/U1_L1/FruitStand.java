@@ -7,7 +7,7 @@
  * It also handles invalid inputs gracefully.                                                                  *
  ***************************************************************************************************************/
 
-package src.U1_L1;
+package U1_L1;
 
 import java.util.Scanner;
 
