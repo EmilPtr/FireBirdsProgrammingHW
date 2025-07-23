@@ -39,13 +39,6 @@ public class Main {
         Person.makeRelationship(billie, not); // Creates a relationship between Billie Joe Armstrong and Not A. person
         Person.makeRelationship(john, billie); // Creates a relationship between John Firebird and Billie Joe Armstrong
 
-        // Print the real estate assets of each person
-        josh.printAssets(); // Prints the real estate assets of Josh
-        untitiled1.printAssets(); // Prints the real estate assets of Untitled 1
-        not.printAssets(); // Prints the real estate assets of Not A. person
-        billie.printAssets(); // Prints the real estate assets of Billie Joe Armstrong
-        john.printAssets(); // Prints the real estate assets of John Firebird
-
         System.out.println("All persons have been created and their actions have been performed :D back to the void they go!"); 
     }
 }
@@ -87,6 +80,9 @@ class Person {
     public float askBankBalance() { // How rude...
         System.out.println("How rude! My bank balance is private, but I will tell you anyway.");
         System.out.println("My current bank balance is: " + this.currentBankBalance);
+        this.printAssets();
+        float netWorth = this.currentBankBalance + this.sumUpAssetValue(); // Initializes net worth with the current bank balance
+        System.out.println("So my total net worth is: " + netWorth); // Prints the total net worth
         return this.currentBankBalance; // Returns the current bank balance
     }
 
@@ -107,13 +103,20 @@ class Person {
 
     public void printAssets() {
         if (realEstateAssets.isEmpty()) {
-            System.out.println(name + " has no real estate assets.");
+            System.out.println("I have no real estate assets.");
         } else {
-            System.out.println(name + "'s real estate assets:");
             for (int i = 0; i < realEstateAssets.size(); i++) {
-                System.out.println("Real Estate Asset #" + i+1 + " Value: $" + realEstateAssets.get(i).value);
+                System.out.println("My Real Estate Asset #" + i+1 + " Value: $" + realEstateAssets.get(i).value);
             }
         }
+    }
+
+    private float sumUpAssetValue() {
+        float totalValue = 0; // Initializes total value to 0
+        for (RealEstateAsset asset : realEstateAssets) {
+            totalValue += asset.value; // Sums up the value of each real estate asset
+        }
+        return totalValue; // Returns the total value of all real estate assets
     }
 }
 
