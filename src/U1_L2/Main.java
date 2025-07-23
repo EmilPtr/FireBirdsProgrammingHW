@@ -79,10 +79,10 @@ class Person {
 
     public float askBankBalance() { // How rude...
         System.out.println("How rude! My bank balance is private, but I will tell you anyway.");
-        System.out.println("My current bank balance is: " + this.currentBankBalance);
+        System.out.println("My current bank balance is: " + (long)this.currentBankBalance);
         this.printAssets();
         float netWorth = this.currentBankBalance + this.sumUpAssetValue(); // Initializes net worth with the current bank balance
-        System.out.println("So my total net worth is: " + netWorth); // Prints the total net worth
+        System.out.println("So my total net worth is: $" + (long)netWorth); // Prints the total net worth
         return this.currentBankBalance; // Returns the current bank balance
     }
 
@@ -90,7 +90,7 @@ class Person {
         System.out.println("La di da, I am going to gain some money through illicit means!");
         System.out.println("A few illegal things later...");
         this.currentBankBalance += money; // Adds the money to the current bank balance
-        System.out.println("I now have " + this.currentBankBalance + " in my bank account!"); // Prints the new bank balance
+        System.out.println("I now have " + (long)this.currentBankBalance + " in my bank account!"); // Prints the new bank balance
         return this.currentBankBalance; // Returns the new bank balance
     }   
 
@@ -106,7 +106,7 @@ class Person {
             System.out.println("I have no real estate assets.");
         } else {
             for (int i = 0; i < realEstateAssets.size(); i++) {
-                System.out.println("My Real Estate Asset #" + i+1 + " Value: $" + realEstateAssets.get(i).value);
+                System.out.println("My Real Estate Asset #" + i+1 + " Value: $" + (long)realEstateAssets.get(i).value);
             }
         }
     }
