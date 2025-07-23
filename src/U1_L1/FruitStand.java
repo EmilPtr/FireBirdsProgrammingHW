@@ -7,6 +7,8 @@
  * It also handles invalid inputs gracefully.                                                                  *
  ***************************************************************************************************************/
 
+package src.U1_L1;
+
 import java.util.Scanner;
 
 public class FruitStand {
@@ -14,6 +16,8 @@ public class FruitStand {
         int totalPrice = 0; // Initialize total price to 0
         Scanner sc = new Scanner(System.in); // Create a Scanner object to read input from the user
         // While loop so that when the user gives an invalid option the program doesn't terminate
+        System.out.println("Welcome to the Fruit and Drink Stand!"); // Welcome message
+        System.out.println("Please choose an item type: 'fruit' or 'drink' (or type 'quit' to finish your order)"); // Prompt for item type
 
         int strawberryPrice = 20; // Price for Strawberry
         int bananaPrice = 30; // Price for Banana

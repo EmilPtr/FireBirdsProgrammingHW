@@ -7,6 +7,8 @@
  * Each variable is initialized with a value that represents its ideal use case.  *
  **********************************************************************************/
 
+package U1_L1;
+
 public class IdealTypes {
     private float money = (float) 1.30; // Ideal datatype for money is float, because it is a large number, with some decimals.
     private int sumOfSeriesOfNaturalNumbers = 1 + 2 + 3 + 4 + 5; // Ideal datatype for sum of series of natural numbers is int, because it is a medium sized number, and natural numbers do not have decimals

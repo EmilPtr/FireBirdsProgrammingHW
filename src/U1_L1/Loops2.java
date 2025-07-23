@@ -6,6 +6,8 @@
  * The program uses a do-while loop to achieve this.                                                                *
  ********************************************************************************************************************/
 
+package U1_L1;
+
 import java.util.Scanner;
 
 public class Loops2 {
