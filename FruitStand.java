@@ -14,6 +14,17 @@ public class FruitStand {
         int totalPrice = 0; // Initialize total price to 0
         Scanner sc = new Scanner(System.in); // Create a Scanner object to read input from the user
         // While loop so that when the user gives an invalid option the program doesn't terminate
+
+        int strawberryPrice = 20; // Price for Strawberry
+        int bananaPrice = 30; // Price for Banana
+        int applePrice = 500; // Price for Apple
+        int mangoPrice = 10; // Price for Mango
+
+        int waterPrice = 5; // Price for Water
+        int juicePrice = 15; // Price for Juice
+        int sodaPrice = 25; // Price for Soda
+        int teaPrice = 10; // Price for Tea
+
         while (true) {
             String choice = sc.nextLine().trim(); // Read user input for item type and trim any leading or trailing whitespace
             if (choice.equalsIgnoreCase("fruit")) {
@@ -24,16 +35,16 @@ public class FruitStand {
                     // Control flow block to determine the drink choice and its price
                     if (choice2.equalsIgnoreCase("strawberry")) {
                         System.out.println("You chose Strawberry, that will be $20");
-                        totalPrice += 20;
+                        totalPrice += strawberryPrice;
                     } else if (choice2.equalsIgnoreCase("banana")) {
                         System.out.println("You chose Banana, that will be $30");
-                        totalPrice += 30;
+                        totalPrice += bananaPrice;
                     } else if (choice2.equalsIgnoreCase("apple")) {
                         System.out.println("You chose Apple, that will be $500");
-                        totalPrice += 500;
+                        totalPrice += applePrice;
                     } else if (choice2.equalsIgnoreCase("mango")) {
                         System.out.println("You chose Mango, that will be $10");
-                        totalPrice += 10;
+                        totalPrice += mangoPrice;
                     } else if (!choice2.equalsIgnoreCase("quit")) {
                         System.out.println("Invalid fruit choice");
                     }
@@ -50,16 +61,16 @@ public class FruitStand {
                     // Control flow block to determine the drink choice and its price
                     if (choice2.equalsIgnoreCase("water")) {
                         System.out.println("You chose Water, that will be $5");
-                        totalPrice += 5;
+                        totalPrice += waterPrice;
                     } else if (choice2.equalsIgnoreCase("juice")) {
                         System.out.println("You chose Juice, that will be $15");
-                        totalPrice += 15;
+                        totalPrice += juicePrice;
                     } else if (choice2.equalsIgnoreCase("soda")) {
                         System.out.println("You chose Soda, that will be $25");
-                        totalPrice += 25;
+                        totalPrice += sodaPrice;
                     } else if (choice2.equalsIgnoreCase("tea")) {
                         System.out.println("You chose Tea, that will be $10");
-                        totalPrice += 10;
+                        totalPrice += teaPrice;
                     } else if (!choice2.equalsIgnoreCase("quit")) {
                         System.out.println("Invalid drink choice");
                     }
